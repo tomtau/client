@@ -103,7 +103,6 @@ const MobileHeader = ({teamID, offset}: {teamID: Types.TeamID; offset: any}) => 
   })
   return (
     <Kb.Box2 direction="horizontal" fullWidth={true} alignItems="flex-start" style={styles.header}>
-      <Kb.BackButton onClick={onBack} style={styles.backButton} />
       <AnimatedBox2
         style={[styles.smallHeader, {opacity, top}]}
         gap="tiny"
@@ -117,6 +116,7 @@ const MobileHeader = ({teamID, offset}: {teamID: Types.TeamID; offset: any}) => 
           {meta.teamname}
         </Kb.Text>
       </AnimatedBox2>
+      <Kb.BackButton onClick={onBack} style={styles.backButton} />
     </Kb.Box2>
   )
 }
